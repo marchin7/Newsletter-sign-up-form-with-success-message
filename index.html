@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
@@ -21,7 +20,7 @@
         <h1 class="visibly-hidden">Frontend Mentor Newsletter sign-up form with success message</h1>
         <div class="main-ilustration">
           <picture>
-            <source media="(min-width:650px)" srcset="assets/images/illustration-sign-up-desktop.svg" />
+            <source media="(min-width:900px)" srcset="assets/images/illustration-sign-up-desktop.svg" />
             <source media="(min-width:465px)" srcset="assets/images/illustration-sign-up-mobile.svg" />
             <img src="assets/images/illustration-sign-up-mobile.svg" alt="" aria-hidden="true" class="main-ilustration-img" />
           </picture>
@@ -44,49 +43,25 @@
             </li>
           </ul>
           <form class="form">
-            <label for="email-input" class="email-input-label">Email address</label>
-            <input type="text" placeholder="email@company.com" class="email-input" id="email-input">
+            <div class="email-input-container">
+              <label for="email-input" class="email-input-label">Email address</label>
+              <span class="error-msg">Valid email required</span>
+              <input type="text" placeholder="email@company.com" class="email-input" id="email-input">
+            </div>
+
             <button type="submit" class="subscribe-btn">Subscribe to monthly newsletter</button>
           </form>
         </div>
       </div>
-      <div class="submited-section">
+      <div class="success-card">
         <img src="assets/images/icon-success.svg" alt="" aria-hidden="true">
         <h2>Thanks for subscribing!</h2>
         <p>
-          A confirmation email has been sent to <span>ash@loremcompany.com</span>. 
+          A confirmation email has been sent to <span class="success-card-email">ash@loremcompany.com</span>. 
           Please open it and click the button inside to confirm your subscription.
         </p>
         <button type="button" class="dismiss-btn">Dismiss message</button>
       </div>
     </main>
-
-    <!-- Sign-up form start
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  Sign-up form end
-
-  Success message start
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-   Success message end -->
   </body>
 </html>
