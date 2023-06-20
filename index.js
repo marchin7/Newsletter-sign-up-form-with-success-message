@@ -9,11 +9,11 @@ const emailRegExp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    validateEmailInput();
+    submitForm();
 });
 
-function validateEmailInput() {
-    if (emailInput.value == null || !emailRegExp.test(emailInput.value)) {
+function submitForm() {
+    if (!emailRegExp.test(emailInput.value)) {
         emailInput.classList.add("error");
         errorMsg.classList.add("error");
     } else {
@@ -31,6 +31,5 @@ emailInput.addEventListener("input", () => {
 });
 
 dismissBtn.addEventListener("click", () => {
-    //window.location.reload();
     window.location.href = window.location;
 });
